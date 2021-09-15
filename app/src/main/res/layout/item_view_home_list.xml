@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:gravity="center"
+    android:id="@+id/ll_home_view"
+    android:background="@drawable/home_list_back"
+    android:orientation="horizontal"
+    android:padding="@dimen/_8sdp">
+
+
+    <com.bzboss.app.custom.RoundRectCornerImageView
+        android:id="@+id/im_offer_image"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/_5sdp">
+
+        <com.bzboss.app.custom.MyCustomTextView
+            android:id="@+id/tv_offer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            tools:text="text one" />
+
+        <com.bzboss.app.custom.MyCustomTextView
+            android:id="@+id/tv_offer_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal"
+            tools:text="text one" />
+
+    </LinearLayout>
+
+    <com.bzboss.app.custom.MyCustomTextView
+        android:id="@+id/tv_open_close"
+        android:layout_width="@dimen/_70sdp"
+        android:text="close"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:layout_height="@dimen/_25sdp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/im_slider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110sdp"
+        android:src="@drawable/ic_slider_one" />
+
+    <com.bzboss.app.custom.MyCustomTextView
+        android:id="@+id/tv_slider_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="testImage"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:textStyle="bold"
+        android:textColor="#818181" />
+</LinearLayout>

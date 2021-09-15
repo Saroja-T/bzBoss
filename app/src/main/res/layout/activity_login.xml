@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/ic_logo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:background="@drawable/frist_home_background"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/cv_login_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_90sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="28dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <!-- <com.hubApp.android.custom.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/login"
+                        android:textColor="#231F20"
+                        android:textSize="@dimen/_12sdp"
+                        app:setTypeFace="@string/nunitoSans_bold" />-->
+
+
+                    <com.bzboss.app.custom.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_33sdp"
+                        android:text="Enter Your Mobile Number"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <com.bzboss.app.custom.MyCustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="+91"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <com.bzboss.app.custom.MyCustomEdittext
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_38sdp"
+                            android:background="@drawable/login_background"
+                            android:digits="1234567890"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:hint="9999999999"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:id="@+id/ed_phone_number"
+                            android:padding="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_14sdp"
+                            android:textColor="@color/black"
+                            android:textColorHint="#CCCCCC"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.bzboss.app.custom.MyCustomButton
+                android:id="@+id/btn_sign_in"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/home_btn_get_started"
+                android:gravity="center"
+                android:stateListAnimator="@animator/selector_animator"
+                android:text="VERIFY"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <com.bzboss.app.custom.MyCustomTextView
+                android:id="@+id/txtSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:gravity="center|bottom"
+                android:text="@string/term_and_condition_register"
+                android:textColor="#7A7170"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_register"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

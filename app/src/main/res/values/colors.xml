@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#00A2E7</color>
+    <color name="purple_500">#00A2E7</color>
+    <color name="purple_700">#00A2E7</color>
+    <color name="teal_200">#00A2E7</color>
+    <color name="teal_700">#00A2E7</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#F13F3F</color>
+    <color name="green">#32B769</color>
+    <color name="app_color">#00A2E7</color>
+    <color name="background">#00A2E7</color>
+    <color name="location_text_color">#F0BC53</color>
+
+    <color name="d_seleted_back_color">#DCEFFE</color>
+    <color name="text_color">#818382</color>
+
+    <color name="donw_arrow_color">#E51515</color>
+    <color name="up_arrow_color">#01B516</color>
+    <color name="colorGreyLight">#e6e6e6</color>
+
+    <color name="firstBox">#4CC0A6</color>
+    <color name="secondBox">#F3766C</color>
+    <color name="thirdBox">#77B1DF</color>
+    <color name="thirdBoxDark">#225f91</color>
+    <color name="fourthBox">#A694E8</color>
+    <color name="fourthBoxDark">#7357db</color>
+    <!--<color name="fifthBox">#c8848c</color>
+    <color name="fifthBoxDark">#6a2f36</color>
+    <color name="sixthBox">#e89e52</color>
+    <color name="sixthBoxDark">#b56617</color>-->
+    <color name="fifthBox">#e89e52</color>
+    <color name="fifthBoxDark">#b56617</color>
+    <color name="sixthBox">#c8848c</color>
+    <color name="sixthBoxDark">#6a2f36</color>
+</resources>

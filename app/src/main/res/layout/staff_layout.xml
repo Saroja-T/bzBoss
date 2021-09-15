@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.bzboss.app.custom.MyCustomTextView
+            android:id="@+id/tv_staff_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            tools:text="text one"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <com.bzboss.app.custom.MyCustomTextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="normal"
+            tools:text="text one"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+    <com.bzboss.app.custom.RoundRectCornerImageView
+        android:id="@+id/im_staff_image"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+
+
+</LinearLayout>

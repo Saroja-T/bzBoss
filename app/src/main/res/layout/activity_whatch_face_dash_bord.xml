@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".activity.WhatchFaceDashBordActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_home_premise"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <include
+            android:id="@+id/menu_item"
+            layout="@layout/my_custom_toolbar"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/ll_first_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/watch_one_back"
+            android:orientation="horizontal"
+            android:padding="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.bzboss.app.custom.RoundRectCornerImageView
+                android:id="@+id/im_home_premise"
+                android:layout_width="@dimen/_43sdp"
+                android:layout_height="@dimen/_43sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:scaleType="centerCrop" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/frist_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.bzboss.app.custom.MyCustomTextView
+                            android:id="@+id/tv_watch_place_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"
+                            tools:text="Watch place" />
+
+                        <com.bzboss.app.custom.MyCustomTextView
+                            android:id="@+id/tv_watch_place_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold"
+                            app:layout_constraintTop_toBottomOf="@+id/frist_view"
+                            tools:ignore="MissingConstraints"
+                            tools:text="Ahmedabad,Gujarat" />
+                    </LinearLayout>
+
+                    <com.bzboss.app.custom.MyCustomTextView
+                        android:id="@+id/tv_open_close"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:background="@drawable/home_list_second_list_second"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        tools:text="OPEN" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/frist_view">
+
+                    <com.bzboss.app.custom.MyCustomTextView
+                        android:id="@+id/tv_watch_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_watch_change_locatio"
+                        tools:ignore="MissingConstraints"
+                        tools:text="3:25 PM - Mar 22, 2021" />
+
+                    <com.bzboss.app.custom.MyCustomTextView
+                        android:id="@+id/tv_watch_change_locatio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="@string/change_location"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="normal"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tv_watch_time"
+                        app:layout_constraintStart_toStartOf="@+id/tv_watch_time"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_watch_place_city"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/frist_home_background"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/ll_first_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/watch_plave_second"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.bzboss.app.custom.MyCustomTextView
+                    android:id="@+id/tv_today_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Today"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal"
+                    tools:ignore="MissingConstraints" />
+
+                <com.bzboss.app.custom.MyCustomTextView
+                    android:id="@+id/tv_yesterday_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Yesterday"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal"
+                    tools:ignore="MissingConstraints" />
+
+                <!-- <com.bzboss.app.custom.MyCustomTextView
+                     android:id="@+id/tv_lastweek_click"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:text="Last week"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_11sdp"
+                     android:textStyle="normal"
+                     tools:ignore="MissingConstraints" />-->
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tv_calender_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/calendar"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.bzboss.app.custom.MyCustomTextView
+                    android:id="@+id/today_date_disply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    tools:ignore="MissingConstraints"
+                    tools:text="Monday, March 22, 2021" />
+                <LinearLayout
+                    android:id="@+id/llSelectedStaff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_gravity="end">
+
+                    <io.ghyeok.stickyswitch.widget.StickySwitch
+                        android:id="@+id/sticky_switch"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        app:ss_animationDuration="600"
+                        app:ss_iconPadding="@dimen/_10sdp"
+                        app:ss_iconSize="@dimen/_10sdp"
+                        app:ss_leftIcon="@drawable/numberic"
+                        app:ss_leftText=""
+                        app:ss_rightIcon="@drawable/graphic"
+                        app:ss_rightText=""
+                        app:ss_selectedTextSize="14sp"
+                        app:ss_sliderBackgroundColor="#DCEFFE"
+                        app:ss_switchColor="#509CD8"
+                        app:ss_textColor="@color/black"
+                        app:ss_textSize="8sp"
+                        app:ss_animationType="line"/>
+                    <!--app:ss_sliderBackgroundColor="#bdbfc2"-->
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/tv_referesh_data"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/refresh_page_option"
+                    app:tint="#509CD8" />
+
+                <RadioGroup
+                    android:checkedButton="@+id/rb_graphical1"
+                    android:id="@+id/toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/pink_out_line"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/rb_numerical1"
+                        android:background="@drawable/toggle_widget_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/numerical"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rb_graphical1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_widget_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/graphical"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_numerical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/tv_open_at"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/first_box"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:id="@+id/tv_openat_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_23sdp"
+                                android:textStyle="bold"
+                                tools:ignore="MissingConstraints"
+                                tools:text="-" />
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:id="@+id/tv_set_am_pm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp"
+                                android:textStyle="bold"
+                                tools:ignore="MissingConstraints"
+                                tools:text="am" />
+                        </LinearLayout>
+
+                        <com.bzboss.app.custom.MyCustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="OPENED AT"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_first_custome"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/second_box"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:id="@+id/tv_first_customer_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_23sdp"
+                                android:textStyle="bold"
+                                tools:ignore="MissingConstraints"
+                                tools:text="9:15" />
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:id="@+id/tv_first_customer_time_am_pm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                tools:ignore="MissingConstraints"
+                                tools:text="am" />
+                        </LinearLayout>
+
+                        <com.bzboss.app.custom.MyCustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="FIRST CUSTOMER"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_custome_up_down"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/third_box"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:id="@+id/tv_customer_min_max"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_23sdp"
+                                android:textStyle="bold"
+                                tools:ignore="MissingConstraints"
+                                tools:text="122-136" />
+
+                        </LinearLayout>
+
+                        <com.bzboss.app.custom.MyCustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="CUSTOMERS"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_1sdp">
+
+                            <ImageView
+                                android:id="@+id/im_up_down_customer"
+                                android:layout_width="20dp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:background="@color/white"
+                                android:padding="@dimen/_4sdp"
+                                android:src="@drawable/ic_up_arrow"
+                                android:visibility="gone" />
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:id="@+id/tv_customer_value"
+                                android:layout_width="@dimen/_22sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:gravity="center|start"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="gone"
+                                tools:ignore="MissingConstraints"
+                                tools:text="100" />
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:id="@+id/tv_customer_day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:gravity="center"
+                                android:text="yesterday"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp"
+                                android:textStyle="bold"
+                                android:visibility="gone"
+                                tools:ignore="MissingConstraints" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_staff"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/fourth_box"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:id="@+id/tv_staff_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_23sdp"
+                                android:textStyle="bold"
+                                tools:ignore="MissingConstraints"
+                                tools:text="130" />
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:text="am"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp"
+                                android:textStyle="bold"
+                                android:visibility="gone"
+                                tools:ignore="MissingConstraints" />
+                        </LinearLayout>
+
+                        <com.bzboss.app.custom.MyCustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="STAFFS"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/tv_closed_at"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/fifth_box"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:id="@+id/tv_closedat_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_23sdp"
+                                android:textStyle="bold"
+                                tools:ignore="MissingConstraints"
+                                tools:text="-" />
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:id="@+id/tv_set_am_pm_for_closed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp"
+                                android:textStyle="bold"
+                                tools:ignore="MissingConstraints"
+                                tools:text="am" />
+                        </LinearLayout>
+
+                        <com.bzboss.app.custom.MyCustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/closed_at"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_known_visitors"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/sixth_box"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:id="@+id/tv_known_visitors_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_23sdp"
+                                android:textStyle="bold"
+                                tools:ignore="MissingConstraints"
+                                tools:text="130" />
+
+                            <com.bzboss.app.custom.MyCustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:text="am"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp"
+                                android:textStyle="bold"
+                                android:visibility="gone"
+                                tools:ignore="MissingConstraints" />
+                        </LinearLayout>
+
+                        <com.bzboss.app.custom.MyCustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/known_visitor"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_graphical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:visibility="visible">
+                    <LinearLayout
+                        android:id="@+id/ll_graphical_open_at"
+                        style="@style/clock_view_ll"
+                        android:visibility="visible"
+                        android:background="@drawable/first_box">
+
+                        <RelativeLayout
+                            style="@style/clock_view_rl">
+
+                                <com.bzboss.app.custom.CustomAnalogClock
+                                    android:id="@+id/simpleAnalogClock"
+                                   style="@style/clock_view"
+                                    android:background="@color/firstBox"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tvOpenAt"
+                            style="@style/clock_view_tv"/>
+                        <TextView
+                            style="@style/clock_view__label_tv"
+                            android:text="@string/openAt"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_graphical_first_customer"
+                        style="@style/clock_view_ll"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/second_box">
+
+                        <RelativeLayout
+                            style="@style/clock_view_rl">
+
+                            <com.bzboss.app.custom.CustomAnalogClockFirstCustomer
+                                android:id="@+id/simpleAnalogClock1"
+                                style="@style/clock_view"
+                                android:background="@color/firstBox"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tvFirstCustomer"
+                            style="@style/clock_view_tv"/>
+                        <TextView
+                            style="@style/clock_view__label_tv"
+                            android:text="@string/firstCustomer"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/ll_graphical_customers"
+                        style="@style/clock_view_ll"
+                        android:background="@drawable/third_box">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp">
+
+                            <com.app.adprogressbarlib.AdCircleProgress
+                                android:id="@+id/pgb_customers"
+                                style="@style/pgb"
+                                android:backgroundTintMode="add"
+                                app:adpgb_background_color="@color/thirdBox"
+                                app:adpgb_finished_color="@color/thirdBoxDark"
+                                app:adpgb_progress="0"
+                                app:adpgb_unfinished_color="@color/colorGreyLight"
+                                custom:adpgb_finished_stroke_width="@dimen/_9sdp"
+                                custom:adpgb_show_text="false"
+                                custom:adpgb_unfinished_stroke_width="@dimen/_9sdp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvCustomerCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="-"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_20sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="@dimen/_14sdp"
+                                    android:gravity="center"
+                                    android:text="@string/customers"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/target"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvTargetCustomerCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_plain_grey_outline"
+                                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_7sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text="0"
+                                android:textSize="@dimen/_9sdp"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:text="@string/customers"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_graphical_staff"
+                        style="@style/clock_view_ll"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/fourth_box">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp">
+
+                            <com.app.adprogressbarlib.AdCircleProgress
+                                android:id="@+id/pgb_staffs"
+                                style="@style/pgb"
+                                android:backgroundTintMode="add"
+                                app:adpgb_background_color="@color/fourthBox"
+                                app:adpgb_finished_color="@color/fourthBoxDark"
+                                app:adpgb_progress="0"
+                                app:adpgb_unfinished_color="@color/colorGreyLight"
+                                custom:adpgb_finished_stroke_width="@dimen/_9sdp"
+                                custom:adpgb_show_text="false"
+                                custom:adpgb_unfinished_stroke_width="@dimen/_9sdp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvStaffsCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="-"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_20sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="@dimen/_14sdp"
+                                    android:gravity="center"
+                                    android:text="@string/staff"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/max"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvTargetStaffCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_plain_grey_outline"
+                                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_7sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:text="@string/staff"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:visibility="visible">
+                    <LinearLayout
+                        android:id="@+id/ll_graphical_closed_at"
+                        style="@style/clock_view_ll"
+                        android:background="@drawable/fifth_box">
+
+                        <RelativeLayout
+                            style="@style/clock_view_rl">
+
+                            <com.bzboss.app.custom.CustomAnalogClockClosedAt
+                                android:id="@+id/simpleAnalogClock2"
+                                style="@style/clock_view"
+                                android:background="@color/firstBox"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tvClosedAt"
+                            style="@style/clock_view_tv"/>
+                        <TextView
+                            style="@style/clock_view__label_tv"
+                            android:text="@string/closedAt"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_graphical_known_visitors"
+                        style="@style/clock_view_ll"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/sixth_box">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp">
+                            <com.app.adprogressbarlib.AdCircleProgress
+                                android:id="@+id/pgb_knownVisitors"
+                                style="@style/pgb"
+                                android:backgroundTintMode="add"
+                                app:adpgb_background_color="@color/sixthBox"
+                                app:adpgb_finished_color="@color/sixthBoxDark"
+                                app:adpgb_unfinished_color="@color/colorGreyLight"
+                                custom:adpgb_finished_stroke_width="@dimen/_9sdp"
+                                custom:adpgb_show_text="false"
+                                custom:adpgb_unfinished_stroke_width="@dimen/_9sdp"
+                                app:adpgb_progress="0"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerInParent="true">
+
+                                <TextView
+                                    android:id="@+id/tvKnownVisitorsCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="-"
+                                    android:textSize="@dimen/_20sdp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:layout_marginBottom="@dimen/_14sdp"
+                                    android:text="@string/known_visitor"/>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_10sdp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_9sdp"
+                                android:textColor="@color/white"
+                                android:text="@string/max"/>
+                            <TextView
+                                android:id="@+id/tvTargetKnownVisitors"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_plain_grey_outline"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_7sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp"
+                                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                                android:text="0"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/staff"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

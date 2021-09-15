@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "309944173023",
+    "project_id": "bzboss",
+    "storage_bucket": "bzboss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309944173023:android:de9307bf054ded8248446a",
+        "android_client_info": {
+          "package_name": "com.bzboss.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309944173023-dgsaj2roq96aovgveo3hl8r86816lvd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuWcF3LJn-863z3Np4kKb5w9dZjRo3Lsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309944173023-dgsaj2roq96aovgveo3hl8r86816lvd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

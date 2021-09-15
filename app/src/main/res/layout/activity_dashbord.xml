@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_home_dashbord"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <include layout="@layout/my_custom_toolbar" />
+
+       <!-- <Button
+            android:id="@+id/refereshView"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Refresh"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_offer_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:visibility="gone"
+            tools:listitem="@layout/item_view_home_list" />
+
+
+        <com.bzboss.app.custom.MyCustomTextView
+            android:id="@+id/tv_home_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/waiting_for_the_administrator_to_provide_access"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+</LinearLayout>

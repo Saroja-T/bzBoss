@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">bzBoss</string>
+    <string name="app_shared_prefence">bzBoss</string>
+
+    <string name="user_response" translatable="false">user_response</string>
+
+    <!--shreference-->
+    <string name="is_login">IsLogin</string>
+
+    <!--activity base-->
+    <string name="dismiss">Dismiss</string>
+    <string name="done">Done</string>
+    <string name="no_internet">It looks like there is a connection issue. Please check your wifi or data settings.</string>
+    <!--toast msg-->
+    <string name="toast_something_wrong">Something went wrong please try again..</string>
+    <string name="toast_try_after_sometimes">Something went wrong please try after sometimes..</string>
+    <string name="toast_time_out">Please try again ,There is network error</string>
+    <string name="txt_back_exit">Press back again to exit</string>
+    <string name="login_toast_msg">No application can handle this request.Please install a webbrowser</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="internet_not_available">Please connect to the internet. If the content is not working with WiFi please try using your mobile data.</string>
+    <string name="second_privacy_policy">I consent to the processing of my data as laid out in<b><u> the privacy policy</u></b></string>
+    <string name="term_and_condition_register">By continuing you agree with our <u><b>term &amp; condition  </b></u>and<u><b>  privacy policies</b></u></string>
+    <!--test mate-->
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="verify_amp_sign_in">VERIFY &amp; SIGN-IN</string>
+    <string name="change_location"><u>Change location</u></string>
+    <string name="waiting_for_the_administrator_to_provide_access">Waiting for the administrator to provide access.</string>
+
+    <string name="known_visitors">KNOWN \nVISITORS</string>
+    <string name="known_visitor">KNOWN VISITORS</string>
+    <string name="closed_at">CLOSED AT</string>
+    <string name="numerical">Numerical</string>
+    <string name="graphical">Graphical</string>
+    <string name="countOfVistors">- \VISITORS</string>
+    <string name="customers">CUSTOMERS</string>
+    <string name="firstCustomer">FIRST CUSTOMER</string>
+    <string name="openAt">OPENED AT</string>
+    <string name="closedAt">CLOSED AT</string>
+    <string name="staff">STAFF</string>
+    <string name="countOfStaffs">0 \nSTAFFS</string>
+    <string name="target">Target</string>
+    <string name="max">Max</string>
+    <string name="staffOnSelected">Staff</string>
+    <string name="description_image_1">thumb</string>
+    <string name="description_zoom_touch_close">zoom</string>
+    <string name="default_notification_channel_id">com.bzboss.app.urgent</string>
+
+    <string-array name="Languages">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+    </string-array>
+</resources>

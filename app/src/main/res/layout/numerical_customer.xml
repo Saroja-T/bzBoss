@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_custome_up_down"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_weight="1"
+    android:background="@drawable/third_box"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.bzboss.app.custom.MyCustomTextView
+                android:id="@+id/tv_customer_min_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_23sdp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:text="122-136" />
+
+        </LinearLayout>
+
+        <com.bzboss.app.custom.MyCustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CUSTOMERS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_1sdp">
+
+            <ImageView
+                android:id="@+id/im_up_down_customer"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@color/white"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_up_arrow"
+                android:visibility="gone" />
+
+            <com.bzboss.app.custom.MyCustomTextView
+                android:id="@+id/tv_customer_value"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:gravity="center|start"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints"
+                tools:text="100" />
+
+            <com.bzboss.app.custom.MyCustomTextView
+                android:id="@+id/tv_customer_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:gravity="center"
+                android:text="yesterday"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_graphical_first_customer"
+        style="@style/clock_view_ll"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/second_box"
+        android:layout_marginStart="@dimen/_8sdp">
+
+        <RelativeLayout
+            style="@style/clock_view_rl">
+
+            <com.bzboss.app.custom.CustomAnalogClockFirstCustomer
+                android:id="@+id/simpleAnalogClock1"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/firstBox"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvFirstCustomer"
+            style="@style/clock_view_tv"/>
+        <TextView
+            style="@style/clock_view__label_tv"
+            android:text="@string/firstCustomer"/>
+
+</LinearLayout>

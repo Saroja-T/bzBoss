@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PrimiseDetailActivty">
+
+    <include layout="@layout/my_custom_toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="vertical">
+
+
+            <com.bzboss.app.custom.RoundRectCornerImageView
+                android:id="@+id/im_home_premise"
+                android:layout_width="375dp"
+                android:layout_height="329dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:scaleType="centerCrop" />
+
+
+            <ImageView
+                android:id="@+id/imageSingle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/data_copy"
+                android:visibility="gone"/>
+
+            <com.bzboss.app.custom.MyCustomTextView
+                android:id="@+id/tv_watch_place_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:text="Watch place" />
+
+            <com.bzboss.app.custom.MyCustomTextView
+                android:id="@+id/tv_watch_place_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/frist_view"
+                tools:ignore="MissingConstraints"
+                tools:text="Ahmedabad,Gujarat" />
+
+            <com.bzboss.app.custom.MyCustomTextView
+                android:id="@+id/tv_watch_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/tv_watch_change_locatio"
+                tools:ignore="MissingConstraints"
+                tools:text="3:25 PM - Mar 22, 2021" />
+
+            <com.bzboss.app.custom.MyCustomTextView
+                android:id="@+id/tv_open_close"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/home_list_second_list_second"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                tools:text="OPEN" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
